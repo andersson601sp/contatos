@@ -1,0 +1,25 @@
+﻿@model Web.Contatos.Models.ListaContatos
+
+<p>
+    @Html.ActionLink("Novo Contato", "Novo")
+</p>
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Contato</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.ContatosModelLista)
+    {   
+        <tr>
+            <td>@item.NOMECONTATO</td>
+            <td>@item.DSC</td>
+            <td>
+                @Html.ActionLink("Editar", "Editar") |
+                @Html.ActionLink("Excluir", "Excluir", new { id = item })
+            </td>
+        </tr>
+    }
+
+</table>

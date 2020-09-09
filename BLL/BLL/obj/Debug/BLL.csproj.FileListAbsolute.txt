@@ -1,0 +1,11 @@
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\BLL.dll
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\BLL.pdb
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\DAL.dll
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\Modelos.dll
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\DAL.pdb
+C:\Users\samue\Desktop\projeto\BLL\BLL\bin\Debug\Modelos.pdb
+C:\Users\samue\Desktop\projeto\BLL\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\samue\Desktop\projeto\BLL\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\projeto\BLL\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\samue\Desktop\projeto\BLL\BLL\obj\Debug\BLL.dll
+C:\Users\samue\Desktop\projeto\BLL\BLL\obj\Debug\BLL.pdb

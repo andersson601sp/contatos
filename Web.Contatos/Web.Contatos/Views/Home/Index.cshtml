@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+    function getview() {
+        var url = "@Html.Raw(Url.Action("Lista", "Home", new { pParam = "-parameter" }))";
+        url = url.replace("-parameter", $('#Param').val());
+        $('#partial').load(url);
+    }
+
+</script>
+
+<div class="row">   
+    <hr />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <label>Insira um valor para pesquisa:</label>
+            <input id="Param" style = "background:#cccccc; width:450px;"/>
+            <button id="pesquisar" value="Registrar Usuário" class="btn btn-default" stye="float:left" onclick='getview()'>Pesquisar</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="partial" style="display: none">
+        @{Html.RenderAction("Lista"); }
+    </div>
+</div>

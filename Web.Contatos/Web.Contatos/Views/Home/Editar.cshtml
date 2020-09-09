@@ -1,0 +1,46 @@
+﻿@model Web.Contatos.Models.ContatosModel
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<script>
+    function getview() {
+        var url = "@Html.Raw(Url.Action("Alterar", "Home", new { pId = "-parameter", pDsc = "-parameter1", }))";
+        url = url.replace("-parameter", $('#Param').val());
+        $('#partial').load(url);
+    }
+
+</script>
+
+<h2>Editar</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>ContatosModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.HiddenFor(m => m.IDCONTATO)
+                @Html.HiddenFor(m => m.ID)
+                @Html.HiddenFor(m => m.TIP)
+                @Html.TextBoxFor(m => m.NOMECONTATO)
+                @Html.TextBoxFor(m => m.DSC)
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
